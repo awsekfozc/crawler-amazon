@@ -1,0 +1,1507 @@
+2017-07-17 16:07:25,603 - Spider www.amazon.com started!
+2017-07-17 16:07:33,190 - downloading page success https://www.amazon.com/gp/bestsellers/
+2017-07-17 16:07:33,273 - process request Request{url='https://www.amazon.com/gp/bestsellers/', method='GET', extras=null, priority=0, headers={Cookie=x-wl-uid=1XVjoE6yLUn1BgyFLML0IYQ2aAgplIcdNZQqjXoRoQ7cgVfYI2XLXzVO0GNlNEw4+NSoTe57C0tM=; session-token=jbYkvZBqckvhVzHSi6uJ8Atv72R37WmxG0aHogv4YlKGrxcnNYcZuDhb6qqINaJ7gMWNKtzmMMiJO+gy/412Rv/lVMc1L3N1UkgDIGho/uWb7xcRgnqe2cdUq3gejnkvBg8JUfZCYKrTjtFYz++CY+MNliaDbL7SxYYqLkXMmBY7ooypSJWcmbZtIXa8OiSceQdU0dTURX89G3ZU4fxfmnEtzLfN0mas0PLXsdjY2MWXecPPdkAobQS8HxZ7q79l; ubid-main=130-6136078-1783247; session-id-time=2082787201l; session-id=136-2158494-0087847; csm-hit=s-M8B8TSCCB59BAWHAA1R4|1500277981740}, cookies={}} error
+java.lang.UnsupportedOperationException: Links can not apply to plain text. Please check whether you use a previous xpath with attribute select (/@href etc).
+	at us.codecraft.webmagic.selector.PlainText.links(PlainText.java:52)
+	at smartdo.crawler.amazon.GoodsDetalis.process(GoodsDetalis.java:23)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 16:07:33,273 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:08:14,446 - Spider www.amazon.com started!
+2017-07-17 16:08:19,512 - download page https://www.amazon.com/gp/bestsellers/ error
+org.apache.http.conn.ConnectTimeoutException: Connect to www.amazon.com:443 [www.amazon.com/23.66.45.207] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:85)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:337)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 16 more
+2017-07-17 16:08:24,518 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:08:38,284 - Spider www.amazon.com started!
+2017-07-17 16:08:39,205 - downloading page success https://www.amazon.com/gp/bestsellers/
+2017-07-17 16:08:39,287 - process request Request{url='https://www.amazon.com/gp/bestsellers/', method='GET', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.UnsupportedOperationException: Links can not apply to plain text. Please check whether you use a previous xpath with attribute select (/@href etc).
+	at us.codecraft.webmagic.selector.PlainText.links(PlainText.java:52)
+	at smartdo.crawler.amazon.GoodsDetalis.process(GoodsDetalis.java:23)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 16:08:39,287 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:10:19,308 - Spider www.amazon.com started!
+2017-07-17 16:10:25,127 - downloading page success https://www.amazon.com/gp/bestsellers/
+2017-07-17 16:10:30,231 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:10:41,439 - Spider www.amazon.com started!
+2017-07-17 16:10:42,641 - downloading page success https://www.amazon.com/gp/bestsellers/
+2017-07-17 16:10:47,757 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:11:12,765 - Spider www.amazon.com started!
+2017-07-17 16:11:15,105 - downloading page success https://www.amazon.com/gp/bestsellers/
+2017-07-17 16:11:20,183 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:11:43,428 - Spider www.amazon.com started!
+2017-07-17 16:11:47,843 - downloading page success https://www.amazon.com/gp/bestsellers/
+2017-07-17 16:11:52,928 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:23:20,663 - Spider www.amazon.com started!
+2017-07-17 16:23:31,480 - downloading page success https://www.amazon.com/gp/bestsellers/
+2017-07-17 16:23:36,563 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:23:58,616 - Spider www.amazon.com started!
+2017-07-17 16:24:07,876 - downloading page success https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0
+2017-07-17 16:24:12,969 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:24:53,833 - Spider www.amazon.com started!
+2017-07-17 16:25:10,183 - downloading page success https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0
+2017-07-17 16:25:15,276 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:25:18,015 - Spider www.amazon.com started!
+2017-07-17 16:25:20,926 - downloading page success https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0
+2017-07-17 16:25:26,016 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:26:58,553 - Spider www.amazon.com started!
+2017-07-17 16:27:07,218 - downloading page success https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0
+2017-07-17 16:27:12,308 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:29:23,191 - Spider www.amazon.com started!
+2017-07-17 16:29:24,409 - downloading page success https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0
+2017-07-17 16:29:29,720 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:38:05,677 - Spider www.amazon.com started!
+2017-07-17 16:38:06,625 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 16:38:11,713 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:38:51,079 - Spider www.amazon.com started!
+2017-07-17 16:38:55,839 - downloading page success https://www.amazon.com/Anti-Cellulite-Treatment-Massage-Oil/dp/B01N3BW11X/ref=zg_bs_beauty_20/132-8019221-6366549?_encoding=UTF8&psc=1&refRID=2P4RGX9R6PVRZA70TXRE
+2017-07-17 16:39:00,944 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:39:40,378 - Spider www.amazon.com started!
+2017-07-17 16:39:42,031 - downloading page success https://www.amazon.com/Anti-Cellulite-Treatment-Massage-Oil/dp/B01N3BW11X/ref=zg_bs_beauty_20/132-8019221-6366549?_encoding=UTF8&psc=1&refRID=2P4RGX9R6PVRZA70TXRE
+2017-07-17 16:39:47,158 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:42:00,173 - Spider www.amazon.com started!
+2017-07-17 16:42:01,905 - downloading page success https://www.amazon.com/Anti-Cellulite-Treatment-Massage-Oil/dp/B01N3BW11X/ref=zg_bs_beauty_20/132-8019221-6366549?_encoding=UTF8&psc=1&refRID=2P4RGX9R6PVRZA70TXRE
+2017-07-17 16:42:07,092 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:47:36,978 - Spider www.amazon.com started!
+2017-07-17 16:47:37,000 - downloading page: https://www.amazon.com/Anti-Cellulite-Treatment-Massage-Oil/dp/B01N3BW11X/ref=zg_bs_beauty_20/132-8019221-6366549?_encoding=UTF8&psc=1&refRID=2P4RGX9R6PVRZA70TXRE
+2017-07-17 16:47:37,029 - process request Request{url='https://www.amazon.com/Anti-Cellulite-Treatment-Massage-Oil/dp/B01N3BW11X/ref=zg_bs_beauty_20/132-8019221-6366549?_encoding=UTF8&psc=1&refRID=2P4RGX9R6PVRZA70TXRE', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at us.codecraft.webmagic.downloader.PhantomJSDownloader.download(PhantomJSDownloader.java:96)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 16:47:37,031 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 16:59:31,881 - Spider www.amazon.com started!
+2017-07-17 16:59:31,888 - downloading page: https://www.amazon.com/Anti-Cellulite-Treatment-Massage-Oil/dp/B01N3BW11X/ref=zg_bs_beauty_20/132-8019221-6366549?_encoding=UTF8&psc=1&refRID=2P4RGX9R6PVRZA70TXRE
+2017-07-17 16:59:31,894 - process request Request{url='https://www.amazon.com/Anti-Cellulite-Treatment-Massage-Oil/dp/B01N3BW11X/ref=zg_bs_beauty_20/132-8019221-6366549?_encoding=UTF8&psc=1&refRID=2P4RGX9R6PVRZA70TXRE', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at us.codecraft.webmagic.downloader.PhantomJSDownloader.download(PhantomJSDownloader.java:96)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 16:59:31,897 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:00:24,526 - Spider www.amazon.com started!
+2017-07-17 17:00:24,534 - downloading page: https://www.amazon.com/Anti-Cellulite-Treatment-Massage-Oil/dp/B01N3BW11X/ref=zg_bs_beauty_20/132-8019221-6366549?_encoding=UTF8&psc=1&refRID=2P4RGX9R6PVRZA70TXRE
+2017-07-17 17:00:30,951 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:04:31,969 - Spider www.amazon.com started!
+2017-07-17 17:04:31,984 - downloading page: https://www.amazon.com/Anti-Cellulite-Treatment-Massage-Oil/dp/B01N3BW11X/ref=zg_bs_beauty_20/132-8019221-6366549?_encoding=UTF8&psc=1&refRID=2P4RGX9R6PVRZA70TXRE
+2017-07-17 17:04:38,400 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:12:13,851 - Spider www.amazon.com started!
+2017-07-17 17:12:13,855 - downloading page: https://www.amazon.com/Anti-Cellulite-Treatment-Massage-Oil/dp/B01N3BW11X/ref=zg_bs_beauty_20/132-8019221-6366549?_encoding=UTF8&psc=1&refRID=2P4RGX9R6PVRZA70TXRE
+2017-07-17 17:12:20,305 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:19:00,658 - Spider www.amazon.com started!
+2017-07-17 17:19:00,658 - downloading page: https://www.amazon.com/Anti-Cellulite-Treatment-Massage-Oil/dp/B01N3BW11X/ref=zg_bs_beauty_20/132-8019221-6366549?_encoding=UTF8&psc=1&refRID=2P4RGX9R6PVRZA70TXRE
+2017-07-17 17:19:07,130 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:19:24,253 - Spider www.amazon.com started!
+2017-07-17 17:19:24,253 - downloading page: https://www.amazon.com/Anti-Cellulite-Treatment-Massage-Oil/dp/B01N3BW11X/ref=zg_bs_beauty_20/132-8019221-6366549?_encoding=UTF8&psc=1&refRID=2P4RGX9R6PVRZA70TXRE
+2017-07-17 17:19:45,542 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:20:43,127 - Spider www.amazon.com started!
+2017-07-17 17:20:43,127 - downloading page: https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4
+2017-07-17 17:21:01,234 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:36:37,580 - Spider www.amazon.com started!
+2017-07-17 17:36:38,620 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 17:36:43,712 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:36:43,713 - Spider null started!
+2017-07-17 17:36:43,714 - Spider null closed! 0 pages downloaded.
+2017-07-17 17:36:59,569 - Spider www.amazon.com started!
+2017-07-17 17:37:07,835 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care/zgbs/hpc/ref=zg_bs_nav_0
+2017-07-17 17:37:12,931 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:37:12,933 - Spider null started!
+2017-07-17 17:37:12,933 - Spider null closed! 0 pages downloaded.
+2017-07-17 17:37:41,773 - Spider www.amazon.com started!
+2017-07-17 17:37:47,067 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0
+2017-07-17 17:37:52,168 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:37:52,169 - Spider null started!
+2017-07-17 17:37:52,169 - Spider null closed! 0 pages downloaded.
+2017-07-17 17:41:47,888 - Spider www.amazon.com started!
+2017-07-17 17:41:48,911 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0
+2017-07-17 17:41:54,001 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:41:54,001 - Spider null started!
+2017-07-17 17:41:54,001 - Spider null closed! 0 pages downloaded.
+2017-07-17 17:42:22,658 - Spider www.amazon.com started!
+2017-07-17 17:42:32,472 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0
+2017-07-17 17:42:37,569 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:42:37,569 - Spider null started!
+2017-07-17 17:42:37,569 - Spider null closed! 0 pages downloaded.
+2017-07-17 17:42:53,333 - Spider www.amazon.com started!
+2017-07-17 17:43:00,282 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0
+2017-07-17 17:43:05,380 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 17:43:05,380 - Spider null started!
+2017-07-17 17:43:05,380 - Spider null closed! 0 pages downloaded.
+2017-07-17 17:59:11,839 - Spider www.amazon.com started!
+2017-07-17 17:59:13,768 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0
+2017-07-17 17:59:59,981 - Spider www.amazon.com started!
+2017-07-17 18:00:01,968 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0
+2017-07-17 18:00:22,926 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Kids-Store/zgbs/home-garden/3206325011/ref=zg_bs_nav_hg_1_hg/132-0462262-2785449
+2017-07-17 18:02:14,808 - Spider www.amazon.com started!
+2017-07-17 18:02:16,047 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:02:36,917 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Bath-Bathing-Accessories/zgbs/beauty/11055991/ref=zg_bs_nav_bt_1_bt/147-8989684-0182801
+2017-07-17 18:02:57,992 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Perfumes-Fragrances/zgbs/beauty/11056591/ref=zg_bs_nav_bt_1_bt/147-8989684-0182801
+2017-07-17 18:03:19,527 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Gift-Sets/zgbs/beauty/11057131/ref=zg_bs_nav_bt_1_bt/147-8989684-0182801
+2017-07-17 18:03:40,572 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Hair-Care-Products/zgbs/beauty/11057241/ref=zg_bs_nav_bt_1_bt/147-8989684-0182801
+2017-07-17 18:06:51,668 - Spider www.amazon.com started!
+2017-07-17 18:07:01,718 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:07:38,621 - Spider www.amazon.com started!
+2017-07-17 18:07:41,059 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:07:55,607 - Spider www.amazon.com started!
+2017-07-17 18:07:56,593 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:08:16,698 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 18:08:16,698 - Spider null started!
+2017-07-17 18:08:16,698 - Spider null closed! 0 pages downloaded.
+2017-07-17 18:11:06,679 - Spider www.amazon.com started!
+2017-07-17 18:11:10,765 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:11:40,498 - Spider www.amazon.com started!
+2017-07-17 18:11:43,604 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:12:03,554 - Spider www.amazon.com started!
+2017-07-17 18:12:22,626 - Spider null started!
+2017-07-17 18:12:22,642 - Spider null closed! 0 pages downloaded.
+2017-07-17 18:12:51,365 - Spider null started!
+2017-07-17 18:12:51,365 - Spider null closed! 0 pages downloaded.
+2017-07-17 18:13:09,259 - Spider www.amazon.com started!
+2017-07-17 18:13:15,715 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:13:35,814 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 18:13:46,984 - Spider www.amazon.com started!
+2017-07-17 18:13:50,937 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:14:11,062 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 18:15:11,621 - Spider www.amazon.com started!
+2017-07-17 18:15:13,516 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:15:33,649 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 18:16:34,476 - Spider www.amazon.com started!
+2017-07-17 18:16:36,503 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:16:56,626 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 18:18:57,793 - Spider www.amazon.com started!
+2017-07-17 18:18:59,642 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:19:09,327 - Spider www.amazon.com started!
+2017-07-17 18:19:11,912 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:19:32,728 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care/zgbs/hpc/ref=zg_bs_nav_0
+2017-07-17 18:19:53,544 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0
+2017-07-17 18:20:16,298 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining/zgbs/kitchen/ref=zg_bs_nav_0
+2017-07-17 18:20:39,841 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden/zgbs/lawn-garden/ref=zg_bs_nav_0
+2017-07-17 18:21:03,117 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement/zgbs/hi/ref=zg_bs_nav_0
+2017-07-17 18:21:24,350 - downloading page success https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/ref=zg_bs_nav_0
+2017-07-17 18:21:45,115 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0
+2017-07-17 18:22:06,731 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies/zgbs/pet-supplies/ref=zg_bs_nav_0
+2017-07-17 18:22:29,533 - downloading page success https://www.amazon.com/Best-Sellers-Cell-Phones-Accessories/zgbs/wireless/ref=zg_bs_nav_0
+2017-07-17 18:22:50,787 - downloading page success https://www.amazon.com/Best-Sellers-Computers-Accessories/zgbs/pc/ref=zg_bs_nav_0
+2017-07-17 18:23:11,573 - downloading page success https://www.amazon.com/Best-Sellers-Sports-Outdoors/zgbs/sporting-goods/ref=zg_bs_nav_0
+2017-07-17 18:23:33,374 - downloading page success https://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/ref=zg_bs_nav_0
+2017-07-17 18:24:02,159 - downloading page success https://www.amazon.com/best-sellers-camera-photo/zgbs/photo/ref=zg_bs_nav_0
+2017-07-17 18:24:30,943 - downloading page success https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0
+2017-07-17 18:24:51,881 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Bath-Bathing-Accessories/zgbs/beauty/11055991/ref=zg_bs_nav_bt_1_bt/130-5611947-6891658
+2017-07-17 18:25:14,716 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Perfumes-Fragrances/zgbs/beauty/11056591/ref=zg_bs_nav_bt_1_bt/130-5611947-6891658
+2017-07-17 18:25:36,513 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Gift-Sets/zgbs/beauty/11057131/ref=zg_bs_nav_bt_1_bt/130-5611947-6891658
+2017-07-17 18:26:05,146 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Hair-Care-Products/zgbs/beauty/11057241/ref=zg_bs_nav_bt_1_bt/130-5611947-6891658
+2017-07-17 18:27:53,558 - Spider www.amazon.com started!
+2017-07-17 18:27:54,561 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 18:28:15,343 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care/zgbs/hpc/ref=zg_bs_nav_0
+2017-07-17 18:28:36,280 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0
+2017-07-17 18:28:56,926 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining/zgbs/kitchen/ref=zg_bs_nav_0
+2017-07-17 18:29:17,674 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden/zgbs/lawn-garden/ref=zg_bs_nav_0
+2017-07-17 18:29:38,357 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement/zgbs/hi/ref=zg_bs_nav_0
+2017-07-17 18:29:59,108 - downloading page success https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/ref=zg_bs_nav_0
+2017-07-17 18:30:19,880 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0
+2017-07-17 18:30:40,473 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies/zgbs/pet-supplies/ref=zg_bs_nav_0
+2017-07-17 18:31:01,528 - downloading page success https://www.amazon.com/Best-Sellers-Cell-Phones-Accessories/zgbs/wireless/ref=zg_bs_nav_0
+2017-07-17 18:31:22,504 - downloading page success https://www.amazon.com/Best-Sellers-Computers-Accessories/zgbs/pc/ref=zg_bs_nav_0
+2017-07-17 18:31:43,510 - downloading page success https://www.amazon.com/Best-Sellers-Sports-Outdoors/zgbs/sporting-goods/ref=zg_bs_nav_0
+2017-07-17 18:32:04,279 - downloading page success https://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/ref=zg_bs_nav_0
+2017-07-17 18:32:25,040 - downloading page success https://www.amazon.com/best-sellers-camera-photo/zgbs/photo/ref=zg_bs_nav_0
+2017-07-17 18:32:45,875 - downloading page success https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0
+2017-07-17 18:33:06,452 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Bath-Bathing-Accessories/zgbs/beauty/11055991/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930
+2017-07-17 18:33:27,487 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Perfumes-Fragrances/zgbs/beauty/11056591/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930
+2017-07-17 18:33:48,819 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Gift-Sets/zgbs/beauty/11057131/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930
+2017-07-17 18:34:09,652 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Hair-Care-Products/zgbs/beauty/11057241/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930
+2017-07-17 18:34:30,406 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Makeup/zgbs/beauty/11058281/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930
+2017-07-17 18:34:51,158 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Skin-Care-Products/zgbs/beauty/11060451/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930
+2017-07-17 18:35:12,568 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Tools-Accessories/zgbs/beauty/11062741/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930
+2017-07-17 18:35:33,261 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Bath-Bathing-Accessories/zgbs/beauty/11055991/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#5
+2017-07-17 18:35:54,121 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Bath-Bathing-Accessories/zgbs/beauty/11055991/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#1
+2017-07-17 18:36:15,138 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Perfumes-Fragrances/zgbs/beauty/11056591/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#5
+2017-07-17 18:36:35,873 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Perfumes-Fragrances/zgbs/beauty/11056591/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#1
+2017-07-17 18:36:56,569 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Gift-Sets/zgbs/beauty/11057131/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#5
+2017-07-17 18:37:17,294 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Gift-Sets/zgbs/beauty/11057131/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#1
+2017-07-17 18:37:38,564 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Hair-Care-Products/zgbs/beauty/11057241/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#5
+2017-07-17 18:37:59,266 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Hair-Care-Products/zgbs/beauty/11057241/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#1
+2017-07-17 18:38:20,140 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Makeup/zgbs/beauty/11058281/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#5
+2017-07-17 18:38:40,904 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Makeup/zgbs/beauty/11058281/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#1
+2017-07-17 18:39:01,706 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Skin-Care-Products/zgbs/beauty/11060451/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#5
+2017-07-17 18:39:22,325 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Skin-Care-Products/zgbs/beauty/11060451/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#1
+2017-07-17 18:39:42,988 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Tools-Accessories/zgbs/beauty/11062741/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#5
+2017-07-17 18:40:03,704 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Tools-Accessories/zgbs/beauty/11062741/ref=zg_bs_nav_bt_1_bt/134-0525351-9868930#1
+2017-07-17 18:40:24,323 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Baby-Child-Products/zgbs/hpc/10787321/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 18:40:45,051 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3760941/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 18:40:56,947 - Spider www.amazon.com started!
+2017-07-17 18:41:07,011 - download page https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0 error
+org.apache.http.conn.ConnectTimeoutException: Connect to www.amazon.com:443 [www.amazon.com/104.111.199.148] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:85)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:337)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 16 more
+2017-07-17 18:41:25,895 - Spider www.amazon.com started!
+2017-07-17 18:41:50,002 - download page https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0 error
+org.apache.http.conn.ConnectTimeoutException: Connect to www.amazon.com:443 [www.amazon.com/104.111.199.148] failed: Read timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:85)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:394)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 16 more
+2017-07-17 18:42:15,581 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care/zgbs/hpc/ref=zg_bs_nav_0
+2017-07-17 18:42:37,082 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0
+2017-07-17 18:42:58,376 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining/zgbs/kitchen/ref=zg_bs_nav_0
+2017-07-17 18:43:19,867 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden/zgbs/lawn-garden/ref=zg_bs_nav_0
+2017-07-17 18:43:41,971 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement/zgbs/hi/ref=zg_bs_nav_0
+2017-07-17 18:44:04,521 - downloading page success https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/ref=zg_bs_nav_0
+2017-07-17 18:44:26,551 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0
+2017-07-17 18:44:51,404 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies/zgbs/pet-supplies/ref=zg_bs_nav_0
+2017-07-17 18:45:16,528 - downloading page success https://www.amazon.com/Best-Sellers-Cell-Phones-Accessories/zgbs/wireless/ref=zg_bs_nav_0
+2017-07-17 18:45:41,468 - downloading page success https://www.amazon.com/Best-Sellers-Computers-Accessories/zgbs/pc/ref=zg_bs_nav_0
+2017-07-17 18:46:04,531 - downloading page success https://www.amazon.com/Best-Sellers-Sports-Outdoors/zgbs/sporting-goods/ref=zg_bs_nav_0
+2017-07-17 18:46:30,818 - downloading page success https://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/ref=zg_bs_nav_0
+2017-07-17 18:46:56,663 - downloading page success https://www.amazon.com/best-sellers-camera-photo/zgbs/photo/ref=zg_bs_nav_0
+2017-07-17 18:47:21,334 - downloading page success https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0
+2017-07-17 18:47:47,327 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Baby-Child-Products/zgbs/hpc/10787321/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520
+2017-07-17 18:48:24,136 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3760941/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520
+2017-07-17 18:48:55,782 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Household-Supplies/zgbs/hpc/15342811/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520
+2017-07-17 18:49:22,265 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Medical-Supplies-Equipment/zgbs/hpc/3775161/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520
+2017-07-17 18:49:57,060 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Oral-Products/zgbs/hpc/10079992011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520
+2017-07-17 18:50:22,443 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3777891/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520
+2017-07-17 18:50:45,331 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sales-Deals/zgbs/hpc/353413011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520
+2017-07-17 18:51:10,819 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sexual-Wellness-Products/zgbs/hpc/3777371/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520
+2017-07-17 18:51:38,012 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sports-Nutrition-Products/zgbs/hpc/6973663011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520
+2017-07-17 18:52:00,037 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Vision-Products/zgbs/hpc/10079994011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520
+2017-07-17 18:52:22,960 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Vitamins-Dietary-Supplements/zgbs/hpc/3764441/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520
+2017-07-17 18:52:44,903 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Wellness-Relaxation-Products/zgbs/hpc/10079996011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520
+2017-07-17 18:53:07,209 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Baby-Child-Products/zgbs/hpc/10787321/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#5
+2017-07-17 18:53:29,720 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Baby-Child-Products/zgbs/hpc/10787321/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#1
+2017-07-17 18:53:52,938 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3760941/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#5
+2017-07-17 18:54:16,576 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3760941/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#1
+2017-07-17 18:54:42,510 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Household-Supplies/zgbs/hpc/15342811/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#5
+2017-07-17 18:55:07,408 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Household-Supplies/zgbs/hpc/15342811/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#1
+2017-07-17 18:55:30,534 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Medical-Supplies-Equipment/zgbs/hpc/3775161/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#5
+2017-07-17 18:55:53,053 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Medical-Supplies-Equipment/zgbs/hpc/3775161/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#1
+2017-07-17 18:56:16,704 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Oral-Products/zgbs/hpc/10079992011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#5
+2017-07-17 18:56:40,797 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Oral-Products/zgbs/hpc/10079992011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#1
+2017-07-17 18:57:03,945 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3777891/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#5
+2017-07-17 18:57:29,730 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3777891/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#1
+2017-07-17 18:57:56,383 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sales-Deals/zgbs/hpc/353413011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#5
+2017-07-17 18:58:22,544 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sales-Deals/zgbs/hpc/353413011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#1
+2017-07-17 18:58:46,174 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sexual-Wellness-Products/zgbs/hpc/3777371/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#5
+2017-07-17 18:59:29,645 - download page https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sexual-Wellness-Products/zgbs/hpc/3777371/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#1 error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:593)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:532)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:266)
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:227)
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:186)
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:67)
+	at org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:1025)
+	at org.apache.commons.io.IOUtils.copy(IOUtils.java:999)
+	at org.apache.commons.io.IOUtils.toByteArray(IOUtils.java:218)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.getResponseContent(HttpClientDownloader.java:126)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.handleResponse(HttpClientDownloader.java:111)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:86)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 18:59:53,091 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sports-Nutrition-Products/zgbs/hpc/6973663011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#5
+2017-07-17 19:00:14,227 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sports-Nutrition-Products/zgbs/hpc/6973663011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#1
+2017-07-17 19:00:35,570 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Vision-Products/zgbs/hpc/10079994011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#5
+2017-07-17 19:00:57,535 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Vision-Products/zgbs/hpc/10079994011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#1
+2017-07-17 19:01:18,769 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Vitamins-Dietary-Supplements/zgbs/hpc/3764441/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#5
+2017-07-17 19:01:39,999 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Vitamins-Dietary-Supplements/zgbs/hpc/3764441/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#1
+2017-07-17 19:02:01,149 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Wellness-Relaxation-Products/zgbs/hpc/10079996011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#5
+2017-07-17 19:02:23,867 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Wellness-Relaxation-Products/zgbs/hpc/10079996011/ref=zg_bs_nav_hpc_1_hpc/135-6408248-0297520#1
+2017-07-17 19:02:45,621 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Kids-Store/zgbs/home-garden/3206325011/ref=zg_bs_nav_hg_1_hg
+2017-07-17 19:03:06,828 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Dining/zgbs/home-garden/284507/ref=zg_bs_nav_hg_1_hg
+2017-07-17 19:03:28,228 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Bedding/zgbs/home-garden/1063252/ref=zg_bs_nav_hg_1_hg
+2017-07-17 19:03:50,123 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Bath-Products/zgbs/home-garden/1063236/ref=zg_bs_nav_hg_1_hg
+2017-07-17 19:04:11,385 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Furniture/zgbs/home-garden/1063306/ref=zg_bs_nav_hg_1_hg
+2017-07-17 19:04:32,573 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Décor-Products/zgbs/home-garden/1063278/ref=zg_bs_nav_hg_1_hg
+2017-07-17 19:04:54,899 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Wall-Art/zgbs/home-garden/3736081/ref=zg_bs_nav_hg_1_hg
+2017-07-17 19:05:17,779 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Seasonal-Décor/zgbs/home-garden/13679381/ref=zg_bs_nav_hg_1_hg
+2017-07-17 19:06:15,738 - download page https://www.amazon.com/Best-Sellers-Home-Kitchen-Heating-Cooling-Air-Quality/zgbs/home-garden/3206324011/ref=zg_bs_nav_hg_1_hg error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:593)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:532)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:266)
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:227)
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:186)
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:67)
+	at org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:1025)
+	at org.apache.commons.io.IOUtils.copy(IOUtils.java:999)
+	at org.apache.commons.io.IOUtils.toByteArray(IOUtils.java:218)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.getResponseContent(HttpClientDownloader.java:126)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.handleResponse(HttpClientDownloader.java:111)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:86)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:07:05,708 - download page https://www.amazon.com/Best-Sellers-Home-Kitchen-Ironing-Products/zgbs/home-garden/510240/ref=zg_bs_nav_hg_1_hg error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:593)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:532)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:266)
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:227)
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:186)
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:67)
+	at org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:1025)
+	at org.apache.commons.io.IOUtils.copy(IOUtils.java:999)
+	at org.apache.commons.io.IOUtils.toByteArray(IOUtils.java:218)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.getResponseContent(HttpClientDownloader.java:126)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.handleResponse(HttpClientDownloader.java:111)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:86)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:07:40,835 - Spider www.amazon.com started!
+2017-07-17 19:07:40,835 - downloading page: https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4
+2017-07-17 19:07:44,385 - download page https://www.amazon.com/Best-Sellers-Home-Kitchen-Vacuum-Cleaners-Floor-Care/zgbs/home-garden/510106/ref=zg_bs_nav_hg_1_hg error
+org.apache.http.conn.ConnectTimeoutException: Connect to www.amazon.com:443 [www.amazon.com/23.66.45.207] failed: Read timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:85)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:394)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 16 more
+2017-07-17 19:08:17,807 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 19:08:21,919 - Spider www.amazon.com started!
+2017-07-17 19:08:21,919 - downloading page: https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4
+2017-07-17 19:08:31,395 - download page https://www.amazon.com/Best-Sellers-Home-Kitchen-Storage-Organization/zgbs/home-garden/3610841/ref=zg_bs_nav_hg_1_hg error
+org.apache.http.conn.ConnectTimeoutException: Connect to www.amazon.com:443 [www.amazon.com/23.66.45.207] failed: Read timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:85)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:394)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 16 more
+2017-07-17 19:08:33,882 - parse document error 
+java.lang.IllegalArgumentException: String input must not be null
+	at org.jsoup.helper.Validate.notNull(Validate.java:26)
+	at org.jsoup.parser.TreeBuilder.initialiseParse(TreeBuilder.java:26)
+	at org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:42)
+	at org.jsoup.parser.HtmlTreeBuilder.parse(HtmlTreeBuilder.java:53)
+	at org.jsoup.parser.Parser.parse(Parser.java:89)
+	at org.jsoup.Jsoup.parse(Jsoup.java:58)
+	at us.codecraft.webmagic.selector.Html.<init>(Html.java:60)
+	at smartdo.crawler.amazon.GoodsUrlListProcessor.process(GoodsUrlListProcessor.java:41)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:08:33,882 - process request Request{url='https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at smartdo.crawler.amazon.GoodsUrlListProcessor.process(GoodsUrlListProcessor.java:42)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:08:33,882 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 19:09:01,170 - Spider www.amazon.com started!
+2017-07-17 19:09:01,170 - downloading page: https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4
+2017-07-17 19:09:13,541 - download page https://www.amazon.com/Best-Sellers-Home-Kitchen-Household-Cleaning-Supplies/zgbs/home-garden/10802561/ref=zg_bs_nav_hg_1_hg error
+org.apache.http.conn.ConnectTimeoutException: Connect to www.amazon.com:443 [www.amazon.com/23.66.45.207] failed: Read timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:85)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:394)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 16 more
+2017-07-17 19:09:17,404 - parse document error 
+java.lang.IllegalArgumentException: String input must not be null
+	at org.jsoup.helper.Validate.notNull(Validate.java:26)
+	at org.jsoup.parser.TreeBuilder.initialiseParse(TreeBuilder.java:26)
+	at org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:42)
+	at org.jsoup.parser.HtmlTreeBuilder.parse(HtmlTreeBuilder.java:53)
+	at org.jsoup.parser.Parser.parse(Parser.java:89)
+	at org.jsoup.Jsoup.parse(Jsoup.java:31)
+	at us.codecraft.webmagic.selector.Html.<init>(Html.java:50)
+	at us.codecraft.webmagic.Page.getHtml(Page.java:83)
+	at smartdo.crawler.amazon.GoodsDetalisProcessor.process(GoodsDetalisProcessor.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:09:17,420 - process request Request{url='https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Need AND/OR between two predicate! /text()
+	at us.codecraft.xsoup.xevaluator.XPathParser.consumePredicates(XPathParser.java:223)
+	at us.codecraft.xsoup.xevaluator.XPathParser.findElements(XPathParser.java:163)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:76)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:408)
+	at us.codecraft.xsoup.xevaluator.XPathParser.combinator(XPathParser.java:110)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:74)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:408)
+	at us.codecraft.xsoup.Xsoup.compile(Xsoup.java:25)
+	at us.codecraft.webmagic.selector.XpathSelector.<init>(XpathSelector.java:21)
+	at us.codecraft.webmagic.selector.Selectors.xpath(Selectors.java:32)
+	at us.codecraft.webmagic.selector.HtmlNode.xpath(HtmlNode.java:42)
+	at smartdo.crawler.amazon.GoodsDetalisProcessor.process(GoodsDetalisProcessor.java:18)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:09:17,420 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 19:09:34,243 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Kids-Store/zgbs/home-garden/3206325011/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:09:48,810 - Spider www.amazon.com started!
+2017-07-17 19:09:48,826 - downloading page: https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4
+2017-07-17 19:09:54,909 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Kids-Store/zgbs/home-garden/3206325011/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:10:14,570 - parse document error 
+java.lang.IllegalArgumentException: String input must not be null
+	at org.jsoup.helper.Validate.notNull(Validate.java:26)
+	at org.jsoup.parser.TreeBuilder.initialiseParse(TreeBuilder.java:26)
+	at org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:42)
+	at org.jsoup.parser.HtmlTreeBuilder.parse(HtmlTreeBuilder.java:53)
+	at org.jsoup.parser.Parser.parse(Parser.java:89)
+	at org.jsoup.Jsoup.parse(Jsoup.java:58)
+	at us.codecraft.webmagic.selector.Html.<init>(Html.java:60)
+	at smartdo.crawler.amazon.GoodsDetalisProcessor.process(GoodsDetalisProcessor.java:17)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:10:14,586 - process request Request{url='https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Need AND/OR between two predicate! /text()
+	at us.codecraft.xsoup.xevaluator.XPathParser.consumePredicates(XPathParser.java:223)
+	at us.codecraft.xsoup.xevaluator.XPathParser.findElements(XPathParser.java:163)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:76)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:408)
+	at us.codecraft.xsoup.xevaluator.XPathParser.combinator(XPathParser.java:110)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:74)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:408)
+	at us.codecraft.xsoup.Xsoup.compile(Xsoup.java:25)
+	at us.codecraft.webmagic.selector.XpathSelector.<init>(XpathSelector.java:21)
+	at us.codecraft.webmagic.selector.Selectors.xpath(Selectors.java:32)
+	at us.codecraft.webmagic.selector.HtmlNode.xpath(HtmlNode.java:42)
+	at smartdo.crawler.amazon.GoodsDetalisProcessor.process(GoodsDetalisProcessor.java:18)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:10:14,586 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 19:10:15,638 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Dining/zgbs/home-garden/284507/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:10:22,717 - Spider www.amazon.com started!
+2017-07-17 19:10:22,733 - downloading page: https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4
+2017-07-17 19:10:36,344 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Dining/zgbs/home-garden/284507/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:10:56,468 - process request Request{url='https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Need AND/OR between two predicate! /text()
+	at us.codecraft.xsoup.xevaluator.XPathParser.consumePredicates(XPathParser.java:223)
+	at us.codecraft.xsoup.xevaluator.XPathParser.findElements(XPathParser.java:163)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:76)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:408)
+	at us.codecraft.xsoup.xevaluator.XPathParser.combinator(XPathParser.java:110)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:74)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:408)
+	at us.codecraft.xsoup.Xsoup.compile(Xsoup.java:25)
+	at us.codecraft.webmagic.selector.XpathSelector.<init>(XpathSelector.java:21)
+	at us.codecraft.webmagic.selector.Selectors.xpath(Selectors.java:32)
+	at us.codecraft.webmagic.selector.HtmlNode.xpath(HtmlNode.java:42)
+	at smartdo.crawler.amazon.GoodsDetalisProcessor.process(GoodsDetalisProcessor.java:18)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:10:56,470 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 19:10:56,987 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Bedding/zgbs/home-garden/1063252/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:11:17,537 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Bedding/zgbs/home-garden/1063252/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:11:38,162 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Bath-Products/zgbs/home-garden/1063236/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:11:52,999 - Spider www.amazon.com started!
+2017-07-17 19:11:53,014 - downloading page: https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4
+2017-07-17 19:11:58,794 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Bath-Products/zgbs/home-garden/1063236/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:12:19,388 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Furniture/zgbs/home-garden/1063306/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:12:28,370 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 19:12:40,047 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Furniture/zgbs/home-garden/1063306/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:13:00,670 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Décor-Products/zgbs/home-garden/1063278/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:13:21,402 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Décor-Products/zgbs/home-garden/1063278/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:13:42,054 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Wall-Art/zgbs/home-garden/3736081/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:14:02,782 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Wall-Art/zgbs/home-garden/3736081/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:14:23,418 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Seasonal-Décor/zgbs/home-garden/13679381/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:14:44,007 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Seasonal-Décor/zgbs/home-garden/13679381/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:15:04,719 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Heating-Cooling-Air-Quality/zgbs/home-garden/3206324011/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:15:25,418 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Heating-Cooling-Air-Quality/zgbs/home-garden/3206324011/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:15:46,078 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Ironing-Products/zgbs/home-garden/510240/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:16:07,194 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Ironing-Products/zgbs/home-garden/510240/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:16:27,870 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Vacuum-Cleaners-Floor-Care/zgbs/home-garden/510106/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:16:48,377 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Vacuum-Cleaners-Floor-Care/zgbs/home-garden/510106/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:17:09,002 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Storage-Organization/zgbs/home-garden/3610841/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:17:29,554 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Storage-Organization/zgbs/home-garden/3610841/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:17:50,174 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Household-Cleaning-Supplies/zgbs/home-garden/10802561/ref=zg_bs_nav_hg_1_hg#5
+2017-07-17 19:18:11,649 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Household-Cleaning-Supplies/zgbs/home-garden/10802561/ref=zg_bs_nav_hg_1_hg#1
+2017-07-17 19:18:32,329 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Bakeware/zgbs/kitchen/289668/ref=zg_bs_nav_k_1_k
+2017-07-17 19:18:53,167 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Barware/zgbs/kitchen/289728/ref=zg_bs_nav_k_1_k
+2017-07-17 19:19:13,868 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Coffee-Tea-Espresso-Appliances/zgbs/kitchen/289742/ref=zg_bs_nav_k_1_k
+2017-07-17 19:19:34,550 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Cookware/zgbs/kitchen/289814/ref=zg_bs_nav_k_1_k
+2017-07-17 19:19:51,905 - Spider www.amazon.com started!
+2017-07-17 19:19:51,905 - downloading page: https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4
+2017-07-17 19:19:55,272 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Glassware-Drinkware/zgbs/kitchen/13217501/ref=zg_bs_nav_k_1_k
+2017-07-17 19:20:16,001 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Home-Brewing-Wine-Making/zgbs/kitchen/979832011/ref=zg_bs_nav_k_1_k
+2017-07-17 19:20:36,790 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Table-Linens/zgbs/kitchen/1063916/ref=zg_bs_nav_k_1_k
+2017-07-17 19:20:49,547 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 19:20:51,534 - Spider www.amazon.com started!
+2017-07-17 19:20:51,534 - downloading page: https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4
+2017-07-17 19:20:57,505 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Cutlery-Knife-Accessories/zgbs/kitchen/289851/ref=zg_bs_nav_k_1_k
+2017-07-17 19:21:09,184 - parse document error 
+java.lang.IllegalArgumentException: String input must not be null
+	at org.jsoup.helper.Validate.notNull(Validate.java:26)
+	at org.jsoup.parser.TreeBuilder.initialiseParse(TreeBuilder.java:26)
+	at org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:42)
+	at org.jsoup.parser.HtmlTreeBuilder.parse(HtmlTreeBuilder.java:53)
+	at org.jsoup.parser.Parser.parse(Parser.java:89)
+	at org.jsoup.Jsoup.parse(Jsoup.java:58)
+	at us.codecraft.webmagic.selector.Html.<init>(Html.java:60)
+	at smartdo.crawler.amazon.GoodsDetalisProcessor.process(GoodsDetalisProcessor.java:21)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:21:09,199 - process request Request{url='https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at us.codecraft.webmagic.selector.HtmlNode.checkElementAndConvert(HtmlNode.java:98)
+	at us.codecraft.webmagic.selector.HtmlNode.selectElements(HtmlNode.java:79)
+	at us.codecraft.webmagic.selector.HtmlNode.xpath(HtmlNode.java:43)
+	at smartdo.crawler.amazon.GoodsDetalisProcessor.process(GoodsDetalisProcessor.java:23)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:21:09,199 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 19:21:18,186 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Utensils-Gadgets/zgbs/kitchen/289754/ref=zg_bs_nav_k_1_k
+2017-07-17 19:21:39,802 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Small-Appliances/zgbs/kitchen/289913/ref=zg_bs_nav_k_1_k
+2017-07-17 19:22:00,866 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Storage-Organization/zgbs/kitchen/510136/ref=zg_bs_nav_k_1_k
+2017-07-17 19:22:16,169 - Spider www.amazon.com started!
+2017-07-17 19:22:16,171 - downloading page: https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4
+2017-07-17 19:22:21,518 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Tabletop/zgbs/kitchen/13162311/ref=zg_bs_nav_k_1_k
+2017-07-17 19:22:30,850 - parse document error 
+java.lang.IllegalArgumentException: String input must not be null
+	at org.jsoup.helper.Validate.notNull(Validate.java:26)
+	at org.jsoup.parser.TreeBuilder.initialiseParse(TreeBuilder.java:26)
+	at org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:42)
+	at org.jsoup.parser.HtmlTreeBuilder.parse(HtmlTreeBuilder.java:53)
+	at org.jsoup.parser.Parser.parse(Parser.java:89)
+	at org.jsoup.Jsoup.parse(Jsoup.java:58)
+	at us.codecraft.webmagic.selector.Html.<init>(Html.java:60)
+	at smartdo.crawler.amazon.GoodsDetalisProcessor.process(GoodsDetalisProcessor.java:21)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:22:30,874 - process request Request{url='https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at us.codecraft.webmagic.selector.HtmlNode.checkElementAndConvert(HtmlNode.java:98)
+	at us.codecraft.webmagic.selector.HtmlNode.selectElements(HtmlNode.java:79)
+	at us.codecraft.webmagic.selector.HtmlNode.xpath(HtmlNode.java:43)
+	at smartdo.crawler.amazon.GoodsDetalisProcessor.process(GoodsDetalisProcessor.java:23)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:414)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 19:22:30,875 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 19:22:42,159 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Wine-Accessories/zgbs/kitchen/13299291/ref=zg_bs_nav_k_1_k
+2017-07-17 19:23:02,768 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Bakeware/zgbs/kitchen/289668/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:23:06,940 - Spider www.amazon.com started!
+2017-07-17 19:23:06,941 - downloading page: https://www.amazon.com/Spinner-UCLL-Bauhinia-Spinning-Reducer/dp/B071S63FXD/ref=zg_bs_arts-crafts_1?_encoding=UTF8&psc=1&refRID=2SD72RB3GG8AWSD7YCV4
+2017-07-17 19:23:23,523 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Bakeware/zgbs/kitchen/289668/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:23:44,998 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Barware/zgbs/kitchen/289728/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:23:47,263 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 19:24:05,713 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Barware/zgbs/kitchen/289728/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:24:26,754 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Coffee-Tea-Espresso-Appliances/zgbs/kitchen/289742/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:24:47,382 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Coffee-Tea-Espresso-Appliances/zgbs/kitchen/289742/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:25:08,336 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Cookware/zgbs/kitchen/289814/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:25:28,924 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Cookware/zgbs/kitchen/289814/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:25:49,621 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Glassware-Drinkware/zgbs/kitchen/13217501/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:26:10,666 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Glassware-Drinkware/zgbs/kitchen/13217501/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:26:31,355 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Home-Brewing-Wine-Making/zgbs/kitchen/979832011/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:26:52,656 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Home-Brewing-Wine-Making/zgbs/kitchen/979832011/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:27:13,297 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Table-Linens/zgbs/kitchen/1063916/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:27:34,056 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Table-Linens/zgbs/kitchen/1063916/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:27:54,657 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Cutlery-Knife-Accessories/zgbs/kitchen/289851/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:28:15,342 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Cutlery-Knife-Accessories/zgbs/kitchen/289851/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:28:36,280 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Utensils-Gadgets/zgbs/kitchen/289754/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:28:57,101 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Utensils-Gadgets/zgbs/kitchen/289754/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:29:17,624 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Small-Appliances/zgbs/kitchen/289913/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:29:38,382 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Small-Appliances/zgbs/kitchen/289913/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:29:59,299 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Storage-Organization/zgbs/kitchen/510136/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:30:20,414 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Storage-Organization/zgbs/kitchen/510136/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:30:41,061 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Tabletop/zgbs/kitchen/13162311/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:31:01,807 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Tabletop/zgbs/kitchen/13162311/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:31:22,499 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Wine-Accessories/zgbs/kitchen/13299291/ref=zg_bs_nav_k_1_k#5
+2017-07-17 19:31:43,182 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Wine-Accessories/zgbs/kitchen/13299291/ref=zg_bs_nav_k_1_k#1
+2017-07-17 19:32:03,725 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Gardening-Care/zgbs/lawn-garden/3610851/ref=zg_bs_nav_lg_1_lg
+2017-07-17 19:32:24,378 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Generators-Portable-Power/zgbs/lawn-garden/552808/ref=zg_bs_nav_lg_1_lg
+2017-07-17 19:32:45,036 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Cooking/zgbs/lawn-garden/553760/ref=zg_bs_nav_lg_1_lg
+2017-07-17 19:33:05,669 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Power-Equipment/zgbs/lawn-garden/551242/ref=zg_bs_nav_lg_1_lg
+2017-07-17 19:33:26,405 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Décor/zgbs/lawn-garden/553788/ref=zg_bs_nav_lg_1_lg
+2017-07-17 19:33:47,000 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Storage/zgbs/lawn-garden/13400641/ref=zg_bs_nav_lg_1_lg
+2017-07-17 19:34:07,728 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Furniture-Accessories/zgbs/lawn-garden/553824/ref=zg_bs_nav_lg_1_lg
+2017-07-17 19:34:28,364 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Pest-Control-Products/zgbs/lawn-garden/553844/ref=zg_bs_nav_lg_1_lg
+2017-07-17 19:34:49,012 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Pools-Hot-Tubs-Supplies/zgbs/lawn-garden/1272941011/ref=zg_bs_nav_lg_1_lg
+2017-07-17 19:35:10,072 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Snow-Removal-Tools/zgbs/lawn-garden/3043471/ref=zg_bs_nav_lg_1_lg
+2017-07-17 19:35:30,948 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Heating-Cooling/zgbs/lawn-garden/13638732011/ref=zg_bs_nav_lg_1_lg
+2017-07-17 19:35:51,784 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Gardening-Care/zgbs/lawn-garden/3610851/ref=zg_bs_nav_lg_1_lg#5
+2017-07-17 19:36:12,532 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Gardening-Care/zgbs/lawn-garden/3610851/ref=zg_bs_nav_lg_1_lg#1
+2017-07-17 19:36:33,250 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Generators-Portable-Power/zgbs/lawn-garden/552808/ref=zg_bs_nav_lg_1_lg#5
+2017-07-17 19:36:54,024 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Generators-Portable-Power/zgbs/lawn-garden/552808/ref=zg_bs_nav_lg_1_lg#1
+2017-07-17 19:37:14,864 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Cooking/zgbs/lawn-garden/553760/ref=zg_bs_nav_lg_1_lg#5
+2017-07-17 19:37:35,652 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Cooking/zgbs/lawn-garden/553760/ref=zg_bs_nav_lg_1_lg#1
+2017-07-17 19:37:56,268 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Power-Equipment/zgbs/lawn-garden/551242/ref=zg_bs_nav_lg_1_lg#5
+2017-07-17 19:38:16,910 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Power-Equipment/zgbs/lawn-garden/551242/ref=zg_bs_nav_lg_1_lg#1
+2017-07-17 19:38:37,607 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Décor/zgbs/lawn-garden/553788/ref=zg_bs_nav_lg_1_lg#5
+2017-07-17 19:38:58,179 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Décor/zgbs/lawn-garden/553788/ref=zg_bs_nav_lg_1_lg#1
+2017-07-17 19:39:18,740 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Storage/zgbs/lawn-garden/13400641/ref=zg_bs_nav_lg_1_lg#5
+2017-07-17 19:39:39,420 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Storage/zgbs/lawn-garden/13400641/ref=zg_bs_nav_lg_1_lg#1
+2017-07-17 19:40:00,088 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Furniture-Accessories/zgbs/lawn-garden/553824/ref=zg_bs_nav_lg_1_lg#5
+2017-07-17 19:40:20,820 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Furniture-Accessories/zgbs/lawn-garden/553824/ref=zg_bs_nav_lg_1_lg#1
+2017-07-17 19:40:41,758 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Pest-Control-Products/zgbs/lawn-garden/553844/ref=zg_bs_nav_lg_1_lg#5
+2017-07-17 19:41:02,720 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Pest-Control-Products/zgbs/lawn-garden/553844/ref=zg_bs_nav_lg_1_lg#1
+2017-07-17 19:41:23,395 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Pools-Hot-Tubs-Supplies/zgbs/lawn-garden/1272941011/ref=zg_bs_nav_lg_1_lg#5
+2017-07-17 19:41:44,071 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Pools-Hot-Tubs-Supplies/zgbs/lawn-garden/1272941011/ref=zg_bs_nav_lg_1_lg#1
+2017-07-17 19:42:04,746 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Snow-Removal-Tools/zgbs/lawn-garden/3043471/ref=zg_bs_nav_lg_1_lg#5
+2017-07-17 19:42:25,302 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Snow-Removal-Tools/zgbs/lawn-garden/3043471/ref=zg_bs_nav_lg_1_lg#1
+2017-07-17 19:42:45,949 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Heating-Cooling/zgbs/lawn-garden/13638732011/ref=zg_bs_nav_lg_1_lg#5
+2017-07-17 19:43:06,605 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Heating-Cooling/zgbs/lawn-garden/13638732011/ref=zg_bs_nav_lg_1_lg#1
+2017-07-17 19:43:27,476 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Air-Powered-Tools/zgbs/hi/552684/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:43:49,025 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Appliances/zgbs/hi/13397451/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:44:09,817 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Building-Supplies/zgbs/hi/551240/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:44:30,616 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Contractor-Supply/zgbs/hi/1259929011/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:44:51,209 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Electrical-Equipment/zgbs/hi/495266/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:45:11,854 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Hardware/zgbs/hi/511228/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:45:32,433 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Kitchen-Bath-Fixtures/zgbs/hi/3754161/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:45:53,002 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Lighting-Ceiling-Fans/zgbs/hi/495224/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:46:14,376 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Painting-Supplies-Wall-Treatments/zgbs/hi/228899/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:46:35,065 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Power-Tools-Hand/zgbs/hi/328182011/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:46:55,830 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Pumps-Plumbing-Equipment/zgbs/hi/13749581/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:47:16,480 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Safety-Security/zgbs/hi/3180231/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:47:37,386 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Storage-Organization/zgbs/hi/13400631/ref=zg_bs_nav_hi_1_hi
+2017-07-17 19:47:58,089 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Air-Powered-Tools/zgbs/hi/552684/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:48:18,683 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Air-Powered-Tools/zgbs/hi/552684/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:48:39,403 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Appliances/zgbs/hi/13397451/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:49:00,191 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Appliances/zgbs/hi/13397451/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:49:20,939 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Building-Supplies/zgbs/hi/551240/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:49:41,610 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Building-Supplies/zgbs/hi/551240/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:50:02,236 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Contractor-Supply/zgbs/hi/1259929011/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:50:22,839 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Contractor-Supply/zgbs/hi/1259929011/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:50:44,018 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Electrical-Equipment/zgbs/hi/495266/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:51:05,331 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Electrical-Equipment/zgbs/hi/495266/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:51:25,879 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Hardware/zgbs/hi/511228/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:51:46,553 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Hardware/zgbs/hi/511228/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:52:07,199 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Kitchen-Bath-Fixtures/zgbs/hi/3754161/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:52:29,092 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Kitchen-Bath-Fixtures/zgbs/hi/3754161/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:52:50,222 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Lighting-Ceiling-Fans/zgbs/hi/495224/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:53:10,766 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Lighting-Ceiling-Fans/zgbs/hi/495224/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:53:31,492 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Painting-Supplies-Wall-Treatments/zgbs/hi/228899/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:53:52,229 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Painting-Supplies-Wall-Treatments/zgbs/hi/228899/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:54:12,831 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Power-Tools-Hand/zgbs/hi/328182011/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:54:33,532 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Power-Tools-Hand/zgbs/hi/328182011/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:54:54,232 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Pumps-Plumbing-Equipment/zgbs/hi/13749581/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:55:15,118 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Pumps-Plumbing-Equipment/zgbs/hi/13749581/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:55:36,037 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Safety-Security/zgbs/hi/3180231/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:55:56,580 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Safety-Security/zgbs/hi/3180231/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:56:17,197 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Storage-Organization/zgbs/hi/13400631/ref=zg_bs_nav_hi_1_hi#5
+2017-07-17 19:56:37,810 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Storage-Organization/zgbs/hi/13400631/ref=zg_bs_nav_hi_1_hi#1
+2017-07-17 19:56:58,565 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Accessories-Supplies/zgbs/electronics/281407/ref=zg_bs_nav_e_1_e
+2017-07-17 19:57:19,244 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Camera-Photo/zgbs/electronics/502394/ref=zg_bs_nav_e_1_e
+2017-07-17 19:57:39,852 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Car/zgbs/electronics/1077068/ref=zg_bs_nav_e_1_e
+2017-07-17 19:58:00,532 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Cell-Phones-Accessories/zgbs/electronics/2811119011/ref=zg_bs_nav_e_1_e
+2017-07-17 19:58:21,084 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Computers-Accessories/zgbs/electronics/541966/ref=zg_bs_nav_e_1_e
+2017-07-17 19:58:41,922 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-GPS-Navigation-Equipment/zgbs/electronics/172526/ref=zg_bs_nav_e_1_e
+2017-07-17 19:59:02,623 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Audio-Headphones/zgbs/electronics/172541/ref=zg_bs_nav_e_1_e
+2017-07-17 19:59:23,282 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Home-Audio-Theater-Products/zgbs/electronics/667846011/ref=zg_bs_nav_e_1_e
+2017-07-17 19:59:44,000 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Marine/zgbs/electronics/319574011/ref=zg_bs_nav_e_1_e
+2017-07-17 20:00:04,854 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Office-Products/zgbs/electronics/172574/ref=zg_bs_nav_e_1_e
+2017-07-17 20:00:25,813 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Outlet/zgbs/electronics/301793/ref=zg_bs_nav_e_1_e
+2017-07-17 20:00:46,428 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Portable-Audio-Video/zgbs/electronics/172623/ref=zg_bs_nav_e_1_e
+2017-07-17 20:01:07,056 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Security-Surveillance-Equipment/zgbs/electronics/524136/ref=zg_bs_nav_e_1_e
+2017-07-17 20:01:27,728 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Computers-Service-Plans/zgbs/electronics/16285901/ref=zg_bs_nav_e_1_e
+2017-07-17 20:01:48,559 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Televisions-Video-Products/zgbs/electronics/1266092011/ref=zg_bs_nav_e_1_e
+2017-07-17 20:02:09,194 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Video-Game-Consoles-Accessories/zgbs/electronics/7926841011/ref=zg_bs_nav_e_1_e
+2017-07-17 20:02:29,889 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Accessories-Supplies/zgbs/electronics/281407/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:02:50,519 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Accessories-Supplies/zgbs/electronics/281407/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:03:11,189 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Camera-Photo/zgbs/electronics/502394/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:03:31,884 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Camera-Photo/zgbs/electronics/502394/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:03:52,522 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Car/zgbs/electronics/1077068/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:04:14,048 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Car/zgbs/electronics/1077068/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:04:34,904 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Cell-Phones-Accessories/zgbs/electronics/2811119011/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:04:55,474 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Cell-Phones-Accessories/zgbs/electronics/2811119011/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:05:16,121 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Computers-Accessories/zgbs/electronics/541966/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:05:36,817 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Computers-Accessories/zgbs/electronics/541966/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:05:57,451 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-GPS-Navigation-Equipment/zgbs/electronics/172526/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:06:18,108 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-GPS-Navigation-Equipment/zgbs/electronics/172526/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:06:38,883 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Audio-Headphones/zgbs/electronics/172541/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:07:00,039 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Audio-Headphones/zgbs/electronics/172541/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:07:20,663 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Home-Audio-Theater-Products/zgbs/electronics/667846011/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:07:41,341 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Home-Audio-Theater-Products/zgbs/electronics/667846011/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:08:02,060 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Marine/zgbs/electronics/319574011/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:08:22,638 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Marine/zgbs/electronics/319574011/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:08:43,429 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Office-Products/zgbs/electronics/172574/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:09:04,028 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Office-Products/zgbs/electronics/172574/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:09:24,568 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Outlet/zgbs/electronics/301793/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:09:45,215 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Outlet/zgbs/electronics/301793/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:10:05,853 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Portable-Audio-Video/zgbs/electronics/172623/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:10:26,519 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Portable-Audio-Video/zgbs/electronics/172623/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:10:47,534 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Security-Surveillance-Equipment/zgbs/electronics/524136/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:11:08,445 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Security-Surveillance-Equipment/zgbs/electronics/524136/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:11:29,505 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Computers-Service-Plans/zgbs/electronics/16285901/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:11:50,181 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Computers-Service-Plans/zgbs/electronics/16285901/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:12:10,836 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Televisions-Video-Products/zgbs/electronics/1266092011/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:12:31,464 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Televisions-Video-Products/zgbs/electronics/1266092011/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:12:52,163 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Video-Game-Consoles-Accessories/zgbs/electronics/7926841011/ref=zg_bs_nav_e_1_e#5
+2017-07-17 20:13:12,880 - downloading page success https://www.amazon.com/Best-Sellers-Electronics-Video-Game-Consoles-Accessories/zgbs/electronics/7926841011/ref=zg_bs_nav_e_1_e#1
+2017-07-17 20:13:33,602 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Toy-Figures-Playsets/zgbs/toys-and-games/165993011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:13:55,193 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Arts-Crafts-Supplies/zgbs/toys-and-games/166057011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:14:15,745 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Baby-Toddler/zgbs/toys-and-games/196601011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:14:36,280 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Tricycles-Scooters-Wagons/zgbs/toys-and-games/256994011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:14:57,097 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Building/zgbs/toys-and-games/166092011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:15:17,623 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Collectible-Card/zgbs/toys-and-games/166242011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:15:38,416 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Dolls-Accessories/zgbs/toys-and-games/166118011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:15:58,985 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Dress-Up-Pretend-Play/zgbs/toys-and-games/166316011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:16:20,060 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Electronics/zgbs/toys-and-games/166164011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:16:40,701 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/166220011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:17:01,352 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Hobbies/zgbs/toys-and-games/276729011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:17:22,026 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Furniture-Décor/zgbs/toys-and-games/166210011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:17:42,637 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Learning-Education/zgbs/toys-and-games/166269011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:18:03,314 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Musical-Instruments/zgbs/toys-and-games/166326011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:18:23,997 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Activities-Amusements/zgbs/toys-and-games/166027011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:18:44,641 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Party-Supplies/zgbs/toys-and-games/1266203011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:19:05,886 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Toy-Remote-Control-Play-Vehicles/zgbs/toys-and-games/166508011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:19:26,636 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Preschool/zgbs/toys-and-games/251909011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:19:47,534 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Pretend-Play/zgbs/toys-and-games/166309011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:20:08,767 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Puppets/zgbs/toys-and-games/166333011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:20:30,146 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Puzzles/zgbs/toys-and-games/166359011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:20:50,960 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Sports-Outdoor-Play/zgbs/toys-and-games/166420011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:21:12,196 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Stuffed-Animals-Plush/zgbs/toys-and-games/166461011/ref=zg_bs_nav_t_1_t
+2017-07-17 20:21:32,786 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Toy-Figures-Playsets/zgbs/toys-and-games/165993011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:21:53,380 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Toy-Figures-Playsets/zgbs/toys-and-games/165993011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:22:13,984 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Arts-Crafts-Supplies/zgbs/toys-and-games/166057011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:22:34,475 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Arts-Crafts-Supplies/zgbs/toys-and-games/166057011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:22:55,402 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Baby-Toddler/zgbs/toys-and-games/196601011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:23:16,133 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Baby-Toddler/zgbs/toys-and-games/196601011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:23:36,792 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Tricycles-Scooters-Wagons/zgbs/toys-and-games/256994011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:23:57,437 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Tricycles-Scooters-Wagons/zgbs/toys-and-games/256994011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:24:18,383 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Building/zgbs/toys-and-games/166092011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:24:38,905 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Building/zgbs/toys-and-games/166092011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:24:59,666 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Collectible-Card/zgbs/toys-and-games/166242011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:25:20,674 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Collectible-Card/zgbs/toys-and-games/166242011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:25:41,886 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Dolls-Accessories/zgbs/toys-and-games/166118011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:26:02,862 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Dolls-Accessories/zgbs/toys-and-games/166118011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:26:23,630 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Dress-Up-Pretend-Play/zgbs/toys-and-games/166316011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:26:44,211 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Dress-Up-Pretend-Play/zgbs/toys-and-games/166316011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:27:04,858 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Electronics/zgbs/toys-and-games/166164011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:27:25,475 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Electronics/zgbs/toys-and-games/166164011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:27:46,288 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/166220011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:28:07,020 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/166220011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:28:27,672 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Hobbies/zgbs/toys-and-games/276729011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:28:48,160 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Hobbies/zgbs/toys-and-games/276729011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:29:08,969 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Furniture-Décor/zgbs/toys-and-games/166210011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:29:29,652 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Furniture-Décor/zgbs/toys-and-games/166210011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:29:50,571 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Learning-Education/zgbs/toys-and-games/166269011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:30:11,542 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Learning-Education/zgbs/toys-and-games/166269011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:30:32,129 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Musical-Instruments/zgbs/toys-and-games/166326011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:30:52,739 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Musical-Instruments/zgbs/toys-and-games/166326011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:31:13,481 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Activities-Amusements/zgbs/toys-and-games/166027011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:31:34,090 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Activities-Amusements/zgbs/toys-and-games/166027011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:31:55,506 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Party-Supplies/zgbs/toys-and-games/1266203011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:32:16,427 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Party-Supplies/zgbs/toys-and-games/1266203011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:32:37,309 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Toy-Remote-Control-Play-Vehicles/zgbs/toys-and-games/166508011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:32:57,908 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Toy-Remote-Control-Play-Vehicles/zgbs/toys-and-games/166508011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:33:18,603 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Preschool/zgbs/toys-and-games/251909011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:33:39,259 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Preschool/zgbs/toys-and-games/251909011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:33:59,979 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Pretend-Play/zgbs/toys-and-games/166309011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:34:20,918 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Pretend-Play/zgbs/toys-and-games/166309011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:34:41,852 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Puppets/zgbs/toys-and-games/166333011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:35:02,777 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Puppets/zgbs/toys-and-games/166333011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:35:37,938 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Puzzles/zgbs/toys-and-games/166359011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:35:58,665 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Puzzles/zgbs/toys-and-games/166359011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:36:19,299 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Sports-Outdoor-Play/zgbs/toys-and-games/166420011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:36:40,079 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Sports-Outdoor-Play/zgbs/toys-and-games/166420011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:37:00,872 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Stuffed-Animals-Plush/zgbs/toys-and-games/166461011/ref=zg_bs_nav_t_1_t#5
+2017-07-17 20:37:21,553 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games-Stuffed-Animals-Plush/zgbs/toys-and-games/166461011/ref=zg_bs_nav_t_1_t#1
+2017-07-17 20:37:43,037 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies-Dog/zgbs/pet-supplies/2975312011/ref=zg_bs_nav_petsupplies_1_petsupplies
+2017-07-17 20:38:03,697 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies-Cat/zgbs/pet-supplies/2975241011/ref=zg_bs_nav_petsupplies_1_petsupplies
+2017-07-17 20:38:24,573 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies-Fish-Aquatic-Pets/zgbs/pet-supplies/2975446011/ref=zg_bs_nav_petsupplies_1_petsupplies
+2017-07-17 20:38:45,391 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies-Bird/zgbs/pet-supplies/2975221011/ref=zg_bs_nav_petsupplies_1_petsupplies
+2017-07-17 20:39:06,187 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies-Horse/zgbs/pet-supplies/2975481011/ref=zg_bs_nav_petsupplies_1_petsupplies
+2017-07-17 20:39:27,198 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies-Reptiles-Amphibian/zgbs/pet-supplies/2975504011/ref=zg_bs_nav_petsupplies_1_petsupplies
+2017-07-17 20:41:05,144 - Spider www.amazon.com started!
+2017-07-17 20:41:06,737 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies-Dog-Feeding-Watering/zgbs/pet-supplies/2975351011/ref=zg_bs_nav_petsupplies_2_2975312011#5
+2017-07-17 20:41:28,353 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 20:42:29,158 - Spider www.amazon.com started!
+2017-07-17 20:42:41,845 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies-Dog-Feeding-Watering/zgbs/pet-supplies/2975351011/ref=zg_bs_nav_petsupplies_2_2975312011#5
+2017-07-17 20:43:01,026 - Spider www.amazon.com started!
+2017-07-17 20:43:02,120 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies-Dog-Feeding-Watering/zgbs/pet-supplies/2975351011/ref=zg_bs_nav_petsupplies_2_2975312011#5
+2017-07-17 20:43:22,934 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 20:44:11,203 - Spider www.amazon.com started!
+2017-07-17 20:44:12,371 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies-Dog-Feeding-Watering/zgbs/pet-supplies/2975351011/ref=zg_bs_nav_petsupplies_2_2975312011#5
+2017-07-17 20:44:33,113 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 20:44:53,750 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care/zgbs/hpc/ref=zg_bs_nav_0
+2017-07-17 20:45:10,161 - Spider www.amazon.com started!
+2017-07-17 20:45:14,394 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies-Dog-Feeding-Watering/zgbs/pet-supplies/2975351011/ref=zg_bs_nav_petsupplies_2_2975312011#5
+2017-07-17 20:45:24,419 - Spider www.amazon.com started!
+2017-07-17 20:47:24,103 - Spider www.amazon.com started!
+2017-07-17 20:47:33,287 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies-Dog-Feeding-Watering/zgbs/pet-supplies/2975351011/ref=zg_bs_nav_petsupplies_2_2975312011#5
+2017-07-17 20:54:02,428 - Spider www.amazon.com started!
+2017-07-17 20:54:49,077 - download page https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0 error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:593)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:532)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:266)
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:227)
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:186)
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:67)
+	at org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:1025)
+	at org.apache.commons.io.IOUtils.copy(IOUtils.java:999)
+	at org.apache.commons.io.IOUtils.toByteArray(IOUtils.java:218)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.getResponseContent(HttpClientDownloader.java:126)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.handleResponse(HttpClientDownloader.java:111)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:86)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 20:55:09,083 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 20:55:18,063 - Spider www.amazon.com started!
+2017-07-17 20:55:19,892 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 20:55:38,090 - Spider www.amazon.com started!
+2017-07-17 20:55:52,011 - Spider www.amazon.com started!
+2017-07-17 20:55:55,733 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 20:56:01,275 - Spider www.amazon.com started!
+2017-07-17 20:56:02,346 - download page https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0 error
+org.apache.http.conn.ConnectTimeoutException: Connect to www.amazon.com:443 [www.amazon.com/23.66.45.207] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:85)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:337)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 16 more
+2017-07-17 20:56:42,178 - Spider www.amazon.com started!
+2017-07-17 20:56:43,543 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 20:56:58,231 - Spider www.amazon.com started!
+2017-07-17 20:57:00,662 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 20:58:49,229 - Spider www.amazon.com started!
+2017-07-17 20:58:54,005 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Skin-Care-Products/zgbs/beauty/11060451/ref=zg_bs_nav_bt_1_bt/134-3759332-6465817?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 20:59:14,104 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 20:59:38,329 - Spider www.amazon.com started!
+2017-07-17 20:59:42,511 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Skin-Care-Products/zgbs/beauty/11060451/ref=zg_bs_nav_bt_1_bt/134-3759332-6465817?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 21:00:00,796 - Spider www.amazon.com started!
+2017-07-17 21:00:16,932 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Skin-Care-Products/zgbs/beauty/11060451/ref=zg_bs_nav_bt_1_bt/134-3759332-6465817?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 21:00:37,031 - Spider www.amazon.com closed! 1 pages downloaded.
+2017-07-17 21:00:51,154 - Spider www.amazon.com started!
+2017-07-17 21:01:06,450 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 21:01:58,760 - download page https://www.amazon.com/Best-Sellers-Health-Personal-Care/zgbs/hpc/ref=zg_bs_nav_0 error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:593)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:532)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:266)
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:227)
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:186)
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:67)
+	at org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:1025)
+	at org.apache.commons.io.IOUtils.copy(IOUtils.java:999)
+	at org.apache.commons.io.IOUtils.toByteArray(IOUtils.java:218)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.getResponseContent(HttpClientDownloader.java:126)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.handleResponse(HttpClientDownloader.java:111)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:86)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 21:02:19,703 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0
+2017-07-17 21:02:40,441 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining/zgbs/kitchen/ref=zg_bs_nav_0
+2017-07-17 21:03:01,222 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden/zgbs/lawn-garden/ref=zg_bs_nav_0
+2017-07-17 21:03:21,816 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement/zgbs/hi/ref=zg_bs_nav_0
+2017-07-17 21:03:42,518 - downloading page success https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/ref=zg_bs_nav_0
+2017-07-17 21:04:03,176 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0
+2017-07-17 21:04:23,869 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies/zgbs/pet-supplies/ref=zg_bs_nav_0
+2017-07-17 21:04:44,495 - downloading page success https://www.amazon.com/Best-Sellers-Cell-Phones-Accessories/zgbs/wireless/ref=zg_bs_nav_0
+2017-07-17 21:05:05,305 - downloading page success https://www.amazon.com/Best-Sellers-Computers-Accessories/zgbs/pc/ref=zg_bs_nav_0
+2017-07-17 21:05:26,356 - downloading page success https://www.amazon.com/Best-Sellers-Sports-Outdoors/zgbs/sporting-goods/ref=zg_bs_nav_0
+2017-07-17 21:05:47,015 - downloading page success https://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/ref=zg_bs_nav_0
+2017-07-17 21:06:07,656 - downloading page success https://www.amazon.com/best-sellers-camera-photo/zgbs/photo/ref=zg_bs_nav_0
+2017-07-17 21:06:28,336 - downloading page success https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0
+2017-07-17 22:44:50,931 - Spider www.amazon.com started!
+2017-07-17 22:44:52,109 - downloading page success https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/ref=zg_bs_nav_0
+2017-07-17 22:45:13,499 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care/zgbs/hpc/ref=zg_bs_nav_0
+2017-07-17 22:45:34,481 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0
+2017-07-17 22:45:55,172 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining/zgbs/kitchen/ref=zg_bs_nav_0
+2017-07-17 22:46:16,141 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden/zgbs/lawn-garden/ref=zg_bs_nav_0
+2017-07-17 22:46:37,520 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement/zgbs/hi/ref=zg_bs_nav_0
+2017-07-17 22:46:58,278 - downloading page success https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/ref=zg_bs_nav_0
+2017-07-17 22:47:18,964 - downloading page success https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0
+2017-07-17 22:47:39,544 - downloading page success https://www.amazon.com/Best-Sellers-Pet-Supplies/zgbs/pet-supplies/ref=zg_bs_nav_0
+2017-07-17 22:48:00,121 - downloading page success https://www.amazon.com/Best-Sellers-Cell-Phones-Accessories/zgbs/wireless/ref=zg_bs_nav_0
+2017-07-17 22:48:21,257 - downloading page success https://www.amazon.com/Best-Sellers-Computers-Accessories/zgbs/pc/ref=zg_bs_nav_0
+2017-07-17 22:48:41,929 - downloading page success https://www.amazon.com/Best-Sellers-Sports-Outdoors/zgbs/sporting-goods/ref=zg_bs_nav_0
+2017-07-17 22:49:02,603 - downloading page success https://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/ref=zg_bs_nav_0
+2017-07-17 22:49:23,903 - downloading page success https://www.amazon.com/best-sellers-camera-photo/zgbs/photo/ref=zg_bs_nav_0
+2017-07-17 22:49:44,618 - downloading page success https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0
+2017-07-17 22:50:05,485 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Bath-Bathing-Accessories/zgbs/beauty/11055991/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419
+2017-07-17 22:50:26,436 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Perfumes-Fragrances/zgbs/beauty/11056591/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419
+2017-07-17 22:50:47,121 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Gift-Sets/zgbs/beauty/11057131/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419
+2017-07-17 22:51:07,895 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Hair-Care-Products/zgbs/beauty/11057241/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419
+2017-07-17 22:51:28,665 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Makeup/zgbs/beauty/11058281/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419
+2017-07-17 22:51:49,376 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Skin-Care-Products/zgbs/beauty/11060451/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419
+2017-07-17 22:52:10,019 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Tools-Accessories/zgbs/beauty/11062741/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419
+2017-07-17 22:52:30,580 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Bath-Bathing-Accessories/zgbs/beauty/11055991/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 22:52:51,374 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Bath-Bathing-Accessories/zgbs/beauty/11055991/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 22:53:11,970 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Perfumes-Fragrances/zgbs/beauty/11056591/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 22:53:33,232 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Perfumes-Fragrances/zgbs/beauty/11056591/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 22:53:53,675 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Gift-Sets/zgbs/beauty/11057131/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 22:54:14,590 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Gift-Sets/zgbs/beauty/11057131/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 22:54:35,356 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Hair-Care-Products/zgbs/beauty/11057241/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 22:54:56,040 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Hair-Care-Products/zgbs/beauty/11057241/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 22:55:16,452 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Makeup/zgbs/beauty/11058281/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 22:55:37,137 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Makeup/zgbs/beauty/11058281/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 22:55:57,729 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Skin-Care-Products/zgbs/beauty/11060451/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 22:56:18,399 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Skin-Care-Products/zgbs/beauty/11060451/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 22:56:39,227 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Tools-Accessories/zgbs/beauty/11062741/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 22:57:00,615 - downloading page success https://www.amazon.com/Best-Sellers-Beauty-Tools-Accessories/zgbs/beauty/11062741/ref=zg_bs_nav_bt_1_bt/140-7666073-3608419?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 22:57:21,176 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Baby-Child-Products/zgbs/hpc/10787321/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 22:57:41,955 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3760941/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 22:58:03,327 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Household-Supplies/zgbs/hpc/15342811/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 22:58:24,091 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Medical-Supplies-Equipment/zgbs/hpc/3775161/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 22:58:45,166 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Oral-Products/zgbs/hpc/10079992011/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 22:59:06,023 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3777891/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 22:59:27,037 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sales-Deals/zgbs/hpc/353413011/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 22:59:47,831 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sexual-Wellness-Products/zgbs/hpc/3777371/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 23:00:08,579 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sports-Nutrition-Products/zgbs/hpc/6973663011/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 23:00:29,327 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Vision-Products/zgbs/hpc/10079994011/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 23:00:49,982 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Vitamins-Dietary-Supplements/zgbs/hpc/3764441/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 23:01:10,605 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Wellness-Relaxation-Products/zgbs/hpc/10079996011/ref=zg_bs_nav_hpc_1_hpc
+2017-07-17 23:01:31,181 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Baby-Child-Products/zgbs/hpc/10787321/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:01:52,647 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Baby-Child-Products/zgbs/hpc/10787321/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:02:13,239 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3760941/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:02:33,675 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3760941/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:02:54,137 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Household-Supplies/zgbs/hpc/15342811/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:03:14,625 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Household-Supplies/zgbs/hpc/15342811/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:03:35,857 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Medical-Supplies-Equipment/zgbs/hpc/3775161/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:03:56,449 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Medical-Supplies-Equipment/zgbs/hpc/3775161/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:04:16,884 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Oral-Products/zgbs/hpc/10079992011/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:04:38,552 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Oral-Products/zgbs/hpc/10079992011/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:04:59,082 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3777891/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:05:19,857 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Products/zgbs/hpc/3777891/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:05:40,433 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sales-Deals/zgbs/hpc/353413011/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:06:01,557 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sales-Deals/zgbs/hpc/353413011/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:06:22,165 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sexual-Wellness-Products/zgbs/hpc/3777371/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:06:42,835 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sexual-Wellness-Products/zgbs/hpc/3777371/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:07:03,926 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sports-Nutrition-Products/zgbs/hpc/6973663011/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:07:24,674 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Sports-Nutrition-Products/zgbs/hpc/6973663011/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:07:45,390 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Vision-Products/zgbs/hpc/10079994011/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:08:06,074 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Vision-Products/zgbs/hpc/10079994011/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:08:26,542 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Vitamins-Dietary-Supplements/zgbs/hpc/3764441/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:08:47,648 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Vitamins-Dietary-Supplements/zgbs/hpc/3764441/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:09:08,224 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Wellness-Relaxation-Products/zgbs/hpc/10079996011/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:09:28,666 - downloading page success https://www.amazon.com/Best-Sellers-Health-Personal-Care-Wellness-Relaxation-Products/zgbs/hpc/10079996011/ref=zg_bs_nav_hpc_1_hpc?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:09:50,053 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Kids-Store/zgbs/home-garden/3206325011/ref=zg_bs_nav_hg_1_hg
+2017-07-17 23:10:10,748 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Dining/zgbs/home-garden/284507/ref=zg_bs_nav_hg_1_hg
+2017-07-17 23:11:01,214 - download page https://www.amazon.com/Best-Sellers-Home-Kitchen-Bedding/zgbs/home-garden/1063252/ref=zg_bs_nav_hg_1_hg error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:593)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:532)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:266)
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:227)
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:186)
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:67)
+	at org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:1025)
+	at org.apache.commons.io.IOUtils.copy(IOUtils.java:999)
+	at org.apache.commons.io.IOUtils.toByteArray(IOUtils.java:218)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.getResponseContent(HttpClientDownloader.java:126)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.handleResponse(HttpClientDownloader.java:111)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:86)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-17 23:11:58,959 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://www.amazon.com:443: The target server failed to respond
+2017-07-17 23:11:58,959 - Retrying request to {s}->https://www.amazon.com:443
+2017-07-17 23:12:00,659 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Bath-Products/zgbs/home-garden/1063236/ref=zg_bs_nav_hg_1_hg
+2017-07-17 23:12:23,357 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Furniture/zgbs/home-garden/1063306/ref=zg_bs_nav_hg_1_hg
+2017-07-17 23:12:47,184 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Décor-Products/zgbs/home-garden/1063278/ref=zg_bs_nav_hg_1_hg
+2017-07-17 23:13:09,537 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Wall-Art/zgbs/home-garden/3736081/ref=zg_bs_nav_hg_1_hg
+2017-07-17 23:13:42,317 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Seasonal-Décor/zgbs/home-garden/13679381/ref=zg_bs_nav_hg_1_hg
+2017-07-17 23:14:04,256 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Heating-Cooling-Air-Quality/zgbs/home-garden/3206324011/ref=zg_bs_nav_hg_1_hg
+2017-07-17 23:14:25,614 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Ironing-Products/zgbs/home-garden/510240/ref=zg_bs_nav_hg_1_hg
+2017-07-17 23:14:47,846 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Vacuum-Cleaners-Floor-Care/zgbs/home-garden/510106/ref=zg_bs_nav_hg_1_hg
+2017-07-17 23:15:12,504 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Storage-Organization/zgbs/home-garden/3610841/ref=zg_bs_nav_hg_1_hg
+2017-07-17 23:15:35,206 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Household-Cleaning-Supplies/zgbs/home-garden/10802561/ref=zg_bs_nav_hg_1_hg
+2017-07-17 23:15:55,794 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Kids-Store/zgbs/home-garden/3206325011/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:16:16,949 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Kids-Store/zgbs/home-garden/3206325011/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:16:37,385 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Dining/zgbs/home-garden/284507/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:16:58,042 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Dining/zgbs/home-garden/284507/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:17:18,700 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Bedding/zgbs/home-garden/1063252/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:17:39,342 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Bedding/zgbs/home-garden/1063252/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:17:59,795 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Bath-Products/zgbs/home-garden/1063236/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:18:21,099 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Bath-Products/zgbs/home-garden/1063236/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:18:51,927 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Furniture/zgbs/home-garden/1063306/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:19:12,625 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Furniture/zgbs/home-garden/1063306/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:19:33,314 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Décor-Products/zgbs/home-garden/1063278/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:19:54,219 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Décor-Products/zgbs/home-garden/1063278/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:20:14,762 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Wall-Art/zgbs/home-garden/3736081/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:20:35,248 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Wall-Art/zgbs/home-garden/3736081/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:20:55,980 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Seasonal-Décor/zgbs/home-garden/13679381/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:21:16,862 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Seasonal-Décor/zgbs/home-garden/13679381/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:21:38,400 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Heating-Cooling-Air-Quality/zgbs/home-garden/3206324011/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:21:59,153 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Heating-Cooling-Air-Quality/zgbs/home-garden/3206324011/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:22:19,682 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Ironing-Products/zgbs/home-garden/510240/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:22:40,292 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Ironing-Products/zgbs/home-garden/510240/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:23:00,853 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Vacuum-Cleaners-Floor-Care/zgbs/home-garden/510106/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:23:21,761 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Vacuum-Cleaners-Floor-Care/zgbs/home-garden/510106/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:23:42,783 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Storage-Organization/zgbs/home-garden/3610841/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:24:03,236 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Storage-Organization/zgbs/home-garden/3610841/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:24:24,281 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Household-Cleaning-Supplies/zgbs/home-garden/10802561/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:24:47,819 - downloading page success https://www.amazon.com/Best-Sellers-Home-Kitchen-Household-Cleaning-Supplies/zgbs/home-garden/10802561/ref=zg_bs_nav_hg_1_hg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:25:19,735 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Bakeware/zgbs/kitchen/289668/ref=zg_bs_nav_k_1_k
+2017-07-17 23:25:41,563 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Barware/zgbs/kitchen/289728/ref=zg_bs_nav_k_1_k
+2017-07-17 23:26:05,924 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Coffee-Tea-Espresso-Appliances/zgbs/kitchen/289742/ref=zg_bs_nav_k_1_k
+2017-07-17 23:26:28,292 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Cookware/zgbs/kitchen/289814/ref=zg_bs_nav_k_1_k
+2017-07-17 23:26:53,512 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Glassware-Drinkware/zgbs/kitchen/13217501/ref=zg_bs_nav_k_1_k
+2017-07-17 23:27:18,260 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Home-Brewing-Wine-Making/zgbs/kitchen/979832011/ref=zg_bs_nav_k_1_k
+2017-07-17 23:27:40,822 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Table-Linens/zgbs/kitchen/1063916/ref=zg_bs_nav_k_1_k
+2017-07-17 23:28:03,276 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Cutlery-Knife-Accessories/zgbs/kitchen/289851/ref=zg_bs_nav_k_1_k
+2017-07-17 23:28:25,355 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Utensils-Gadgets/zgbs/kitchen/289754/ref=zg_bs_nav_k_1_k
+2017-07-17 23:28:48,044 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Small-Appliances/zgbs/kitchen/289913/ref=zg_bs_nav_k_1_k
+2017-07-17 23:29:13,023 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Storage-Organization/zgbs/kitchen/510136/ref=zg_bs_nav_k_1_k
+2017-07-17 23:29:36,568 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Tabletop/zgbs/kitchen/13162311/ref=zg_bs_nav_k_1_k
+2017-07-17 23:30:01,464 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Wine-Accessories/zgbs/kitchen/13299291/ref=zg_bs_nav_k_1_k
+2017-07-17 23:30:22,481 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Bakeware/zgbs/kitchen/289668/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:30:43,311 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Bakeware/zgbs/kitchen/289668/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:31:04,172 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Barware/zgbs/kitchen/289728/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:31:24,784 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Barware/zgbs/kitchen/289728/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:31:45,576 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Coffee-Tea-Espresso-Appliances/zgbs/kitchen/289742/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:32:06,311 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Coffee-Tea-Espresso-Appliances/zgbs/kitchen/289742/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:32:27,968 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Cookware/zgbs/kitchen/289814/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:32:49,078 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Cookware/zgbs/kitchen/289814/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:33:09,767 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Glassware-Drinkware/zgbs/kitchen/13217501/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:33:30,753 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Glassware-Drinkware/zgbs/kitchen/13217501/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:33:56,482 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Home-Brewing-Wine-Making/zgbs/kitchen/979832011/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:34:17,111 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Home-Brewing-Wine-Making/zgbs/kitchen/979832011/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:34:38,502 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Table-Linens/zgbs/kitchen/1063916/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:34:59,330 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Table-Linens/zgbs/kitchen/1063916/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:35:20,178 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Cutlery-Knife-Accessories/zgbs/kitchen/289851/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:35:40,864 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Cutlery-Knife-Accessories/zgbs/kitchen/289851/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:36:01,538 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Utensils-Gadgets/zgbs/kitchen/289754/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:36:22,152 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Utensils-Gadgets/zgbs/kitchen/289754/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:36:44,292 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Small-Appliances/zgbs/kitchen/289913/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:37:04,933 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Small-Appliances/zgbs/kitchen/289913/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:37:25,406 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Storage-Organization/zgbs/kitchen/510136/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:37:46,172 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Storage-Organization/zgbs/kitchen/510136/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:38:06,832 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Tabletop/zgbs/kitchen/13162311/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:38:27,242 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Tabletop/zgbs/kitchen/13162311/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:38:47,899 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Wine-Accessories/zgbs/kitchen/13299291/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:39:08,635 - downloading page success https://www.amazon.com/Best-Sellers-Kitchen-Dining-Wine-Accessories/zgbs/kitchen/13299291/ref=zg_bs_nav_k_1_k?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:39:36,751 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Gardening-Care/zgbs/lawn-garden/3610851/ref=zg_bs_nav_lg_1_lg
+2017-07-17 23:39:57,878 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Generators-Portable-Power/zgbs/lawn-garden/552808/ref=zg_bs_nav_lg_1_lg
+2017-07-17 23:40:18,784 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Cooking/zgbs/lawn-garden/553760/ref=zg_bs_nav_lg_1_lg
+2017-07-17 23:40:39,597 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Power-Equipment/zgbs/lawn-garden/551242/ref=zg_bs_nav_lg_1_lg
+2017-07-17 23:41:01,116 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Décor/zgbs/lawn-garden/553788/ref=zg_bs_nav_lg_1_lg
+2017-07-17 23:41:24,206 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Storage/zgbs/lawn-garden/13400641/ref=zg_bs_nav_lg_1_lg
+2017-07-17 23:41:47,594 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Furniture-Accessories/zgbs/lawn-garden/553824/ref=zg_bs_nav_lg_1_lg
+2017-07-17 23:42:12,435 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Pest-Control-Products/zgbs/lawn-garden/553844/ref=zg_bs_nav_lg_1_lg
+2017-07-17 23:42:36,325 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Pools-Hot-Tubs-Supplies/zgbs/lawn-garden/1272941011/ref=zg_bs_nav_lg_1_lg
+2017-07-17 23:42:57,855 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Snow-Removal-Tools/zgbs/lawn-garden/3043471/ref=zg_bs_nav_lg_1_lg
+2017-07-17 23:43:19,075 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Heating-Cooling/zgbs/lawn-garden/13638732011/ref=zg_bs_nav_lg_1_lg
+2017-07-17 23:43:39,563 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Gardening-Care/zgbs/lawn-garden/3610851/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:44:00,453 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Gardening-Care/zgbs/lawn-garden/3610851/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:44:21,547 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Generators-Portable-Power/zgbs/lawn-garden/552808/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:44:42,161 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Generators-Portable-Power/zgbs/lawn-garden/552808/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:45:02,973 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Cooking/zgbs/lawn-garden/553760/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:45:25,160 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Cooking/zgbs/lawn-garden/553760/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:45:46,273 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Power-Equipment/zgbs/lawn-garden/551242/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:46:10,222 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Power-Equipment/zgbs/lawn-garden/551242/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:46:30,726 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Décor/zgbs/lawn-garden/553788/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:46:51,308 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Décor/zgbs/lawn-garden/553788/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:47:11,934 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Storage/zgbs/lawn-garden/13400641/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:47:34,369 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Storage/zgbs/lawn-garden/13400641/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:47:54,934 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Furniture-Accessories/zgbs/lawn-garden/553824/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:48:15,780 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Furniture-Accessories/zgbs/lawn-garden/553824/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:48:36,514 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Pest-Control-Products/zgbs/lawn-garden/553844/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:48:57,378 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Pest-Control-Products/zgbs/lawn-garden/553844/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:49:17,880 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Pools-Hot-Tubs-Supplies/zgbs/lawn-garden/1272941011/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:49:38,646 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Pools-Hot-Tubs-Supplies/zgbs/lawn-garden/1272941011/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:49:59,478 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Snow-Removal-Tools/zgbs/lawn-garden/3043471/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:50:20,336 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Snow-Removal-Tools/zgbs/lawn-garden/3043471/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:50:41,025 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Heating-Cooling/zgbs/lawn-garden/13638732011/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:51:02,106 - downloading page success https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden-Outdoor-Heating-Cooling/zgbs/lawn-garden/13638732011/ref=zg_bs_nav_lg_1_lg?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:51:23,168 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Air-Powered-Tools/zgbs/hi/552684/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:51:45,463 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Appliances/zgbs/hi/13397451/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:52:06,966 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Building-Supplies/zgbs/hi/551240/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:52:27,997 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Contractor-Supply/zgbs/hi/1259929011/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:52:49,997 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Electrical-Equipment/zgbs/hi/495266/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:53:11,671 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Hardware/zgbs/hi/511228/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:53:40,063 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Kitchen-Bath-Fixtures/zgbs/hi/3754161/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:54:02,174 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Lighting-Ceiling-Fans/zgbs/hi/495224/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:54:24,953 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Painting-Supplies-Wall-Treatments/zgbs/hi/228899/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:54:49,590 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Power-Tools-Hand/zgbs/hi/328182011/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:55:13,494 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Pumps-Plumbing-Equipment/zgbs/hi/13749581/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:55:45,978 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Safety-Security/zgbs/hi/3180231/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:56:09,647 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Storage-Organization/zgbs/hi/13400631/ref=zg_bs_nav_hi_1_hi
+2017-07-17 23:56:30,259 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Air-Powered-Tools/zgbs/hi/552684/ref=zg_bs_nav_hi_1_hi?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:56:51,213 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Air-Powered-Tools/zgbs/hi/552684/ref=zg_bs_nav_hi_1_hi?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:57:11,716 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Appliances/zgbs/hi/13397451/ref=zg_bs_nav_hi_1_hi?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:57:32,608 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Appliances/zgbs/hi/13397451/ref=zg_bs_nav_hi_1_hi?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:57:53,217 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Building-Supplies/zgbs/hi/551240/ref=zg_bs_nav_hi_1_hi?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:58:14,000 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Building-Supplies/zgbs/hi/551240/ref=zg_bs_nav_hi_1_hi?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:58:35,096 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Contractor-Supply/zgbs/hi/1259929011/ref=zg_bs_nav_hi_1_hi?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:58:56,049 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Contractor-Supply/zgbs/hi/1259929011/ref=zg_bs_nav_hi_1_hi?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:59:17,035 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Electrical-Equipment/zgbs/hi/495266/ref=zg_bs_nav_hi_1_hi?_encoding=UTF8&pg=1&ajax=1
+2017-07-17 23:59:37,740 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Electrical-Equipment/zgbs/hi/495266/ref=zg_bs_nav_hi_1_hi?_encoding=UTF8&pg=5&ajax=1
+2017-07-17 23:59:58,243 - downloading page success https://www.amazon.com/Best-Sellers-Home-Improvement-Hardware/zgbs/hi/511228/ref=zg_bs_nav_hi_1_hi?_encoding=UTF8&pg=1&ajax=1
