@@ -1,7 +1,5 @@
 package smartdo.crawler.amazon;
 
-import com.alibaba.fastjson.JSON;
-import org.apache.commons.codec.digest.DigestUtils;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;

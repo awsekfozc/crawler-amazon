@@ -1,6 +1,7 @@
 package smartdo.crawler.amazon;
 
 import org.apache.commons.lang3.StringUtils;
+import smartdo.crawler.amazon.pipeline.AmazonDetailsPipeline;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;

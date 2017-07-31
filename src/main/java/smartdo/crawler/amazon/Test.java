@@ -18,5 +18,10 @@ public class Test {
         String big_type_rank = "https://www.amazon.com/Aromatherapy-Essential-Humidifier-Ultrasonic-Diffusers/dp/B06ZZLN6DP/ref=zg_bs_11056591_100?_encoding=UTF8&psc=1&refRID=SZPF15KEZHMSNRP9BNZ&0.123123123&0.33213123";
         String[] arry = big_type_rank.split("&");
         System.out.println(arry.length);
+
+        String url = "https://www.amazon.com/Best-Sellers-Kitchen-Dining/zgbs/kitchen/ref=zg_bs_nav_0?page_smartdo_depth=1";
+
+        String page_depth = url.substring(url.indexOf("page_smartdo_depth="));
+        System.out.println(page_depth);
     }
 }
